@@ -1,1 +1,1 @@
-# an Interactive Quiz mini project :)  
+# Interactive Quiz mini project :)  
