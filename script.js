@@ -15,5 +15,20 @@ form.addEventListener("submit", e => {
         }
     })
 
-    console.log(score);
+
+    // show result
+    const result = document.querySelector(".result"); 
+    
+    result.classList.remove("d-none");
+    scrollTo(0,0);
+
+    let i = 0; 
+    let timer = setInterval(() => {
+        i++;
+        if(i === score){
+            clearInterval(timer);
+        }
+        result.querySelector("span").textContent = `${i}%`
+    }, 20)
+
 })
