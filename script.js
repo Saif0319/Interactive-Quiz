@@ -24,10 +24,14 @@ form.addEventListener("submit", e => {
 
     let i = 0; 
     let timer = setInterval(() => {
-        i++;
+        
         if(i === score){
             clearInterval(timer);
+        } else {
+            i++;
         }
+        
+
         result.querySelector("span").textContent = `${i}%`
     }, 20)
 
